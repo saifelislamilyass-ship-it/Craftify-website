@@ -116,6 +116,8 @@
   .exp-body{padding:20px;}
   .exp-body h3{font-size:19px;}
   .exp-body p{font-size:13.5px; color:var(--ink-soft); margin:8px 0 16px;}
+  .exp-book{margin-top:12px; font-size:13px; font-weight:700; color:var(--terracotta); text-decoration:none; display:inline-flex; align-items:center; gap:6px;}
+  .exp-book:hover{color:var(--terracotta-deep);}
   .price{font-family:'Playfair Display', serif; font-weight:800; font-size:30px; color:var(--ink);}
   .price .dh{font-weight:600; color:var(--terracotta); font-size:19px; margin-inline-start:4px;}
 
@@ -365,7 +367,7 @@
       <p data-i18n="experiences.lede">The perfect first step. Beginner-friendly, fully guided, all materials included.</p>
     </div>
     <div class="card-grid">
-      <div class="exp-card"><div class="exp-visual"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></svg></div><div class="exp-body"><h3 data-i18n="craft.pottery">Pottery</h3><p data-i18n="experiences.pottery.desc">Shape, throw, create. Feel the clay come alive.</p><div class="price">250<span class="dh">DH</span></div></div></div>
+      <div class="exp-card"><div class="exp-visual"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></svg></div><div class="exp-body"><h3 data-i18n="craft.pottery">Pottery</h3><p data-i18n="experiences.pottery.desc">Shape, throw, create. Feel the clay come alive.</p><div class="price">250<span class="dh">DH</span></div><a class="exp-book" href="https://docs.google.com/forms/d/e/1FAIpQLSePz-j0XpMZThTT2PNIRNTzKrToRSZe3OCtaxMACsnh69xYhg/viewform" target="_blank" rel="noopener" data-i18n="experiences.bookLink">Book now →</a></div></div>
       <div class="exp-card"><div class="exp-visual"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></div><div class="exp-body"><h3 data-i18n="craft.zellij">Zellij</h3><p data-i18n="experiences.zellij.desc">Geometric precision meets Moroccan artistry.</p><div class="price">250<span class="dh">DH</span></div></div></div>
       <div class="exp-card"><div class="exp-visual"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M2 12h20" stroke-dasharray="1 3"/><circle cx="12" cy="12" r="8"/></svg></div><div class="exp-body"><h3 data-i18n="craft.embroidery">Embroidery</h3><p data-i18n="experiences.embroidery.desc">Stitch by stitch, tradition comes to life.</p><div class="price">250<span class="dh">DH</span></div></div></div>
       <div class="exp-card"><div class="exp-visual"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="4" y1="4" x2="4" y2="20"/><line x1="9" y1="4" x2="9" y2="20"/><line x1="14" y1="4" x2="14" y2="20"/><line x1="19" y1="4" x2="19" y2="20"/><line x1="2" y1="8" x2="21" y2="8"/><line x1="2" y1="16" x2="21" y2="16"/></svg></div><div class="exp-body"><h3 data-i18n="craft.weaving">Weaving</h3><p data-i18n="experiences.weaving.desc">Interlace color, texture, and intention.</p><div class="price">250<span class="dh">DH</span></div></div></div>
@@ -577,6 +579,7 @@
       'experiences.eyebrow':'Begin Your Journey','experiences.title':'Entry Experiences','experiences.lede':'The perfect first step. Beginner-friendly, fully guided, all materials included.',
       'craft.pottery':'Pottery','craft.zellij':'Zellij','craft.embroidery':'Embroidery','craft.weaving':'Weaving',
       'experiences.pottery.desc':'Shape, throw, create. Feel the clay come alive.','experiences.zellij.desc':'Geometric precision meets Moroccan artistry.','experiences.embroidery.desc':'Stitch by stitch, tradition comes to life.','experiences.weaving.desc':'Interlace color, texture, and intention.',
+      'experiences.bookLink':'Book now →',
       'premium.eyebrow':'Elevated Artistry','premium.title':'Premium Craft Experiences','premium.lede':'More than a workshop — an unforgettable experience.',
       'premium.perk1.title':'Premium Guidance','premium.perk1.desc':'Dedicated artisan facilitator, fully personalized',
       'premium.perk2.title':'Exclusive Experience','premium.perk2.desc':'Intimate, unhurried, deeply immersive',
@@ -629,6 +632,7 @@
       'experiences.eyebrow':'Commencez votre parcours','experiences.title':'Expériences découverte','experiences.lede':'Le premier pas idéal. Adapté aux débutants, entièrement guidé, matériel inclus.',
       'craft.pottery':'Poterie','craft.zellij':'Zellige','craft.embroidery':'Broderie','craft.weaving':'Tissage',
       'experiences.pottery.desc':"Façonnez, tournez, créez. Sentez l'argile prendre vie.",'experiences.zellij.desc':"La précision géométrique rencontre l'art marocain.",'experiences.embroidery.desc':'Point par point, la tradition prend vie.','experiences.weaving.desc':'Entrelacez couleur, texture et intention.',
+      'experiences.bookLink':'Réserver →',
       'premium.eyebrow':'Un artisanat sublimé','premium.title':'Expériences artisanales premium','premium.lede':"Plus qu'un atelier — une expérience inoubliable.",
       'premium.perk1.title':'Accompagnement premium','premium.perk1.desc':'Un artisan dédié, entièrement personnalisé',
       'premium.perk2.title':'Expérience exclusive','premium.perk2.desc':'Intime, sans précipitation, profondément immersive',
@@ -681,6 +685,7 @@
       'experiences.eyebrow':'ابدأ رحلتك','experiences.title':'تجارب تمهيدية','experiences.lede':'الخطوة الأولى المثالية. مناسبة للمبتدئين، موجَّهة بالكامل، وتشمل جميع المواد.',
       'craft.pottery':'الفخار','craft.zellij':'الزليج','craft.embroidery':'التطريز','craft.weaving':'النسيج',
       'experiences.pottery.desc':'شكّل، دوّر، وابتكر. اشعر بالطين وهو ينبض بالحياة.','experiences.zellij.desc':'الدقة الهندسية تلتقي بالفن المغربي.','experiences.embroidery.desc':'غرزة بعد غرزة، يعود التراث إلى الحياة.','experiences.weaving.desc':'انسج الألوان والملمس والمعنى معًا.',
+      'experiences.bookLink':'احجز الآن ←',
       'premium.eyebrow':'حرفية راقية','premium.title':'تجارب حرفية مميزة','premium.lede':'أكثر من مجرد ورشة — تجربة لا تُنسى.',
       'premium.perk1.title':'إرشاد مميز','premium.perk1.desc':'حرفي مخصص لكم، بتجربة شخصية بالكامل',
       'premium.perk2.title':'تجربة حصرية','premium.perk2.desc':'أجواء حميمية وهادئة وتجربة غامرة بعمق',
