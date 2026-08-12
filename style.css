@@ -90,12 +90,6 @@
   .hero .btn-ghost:hover{background:#fff; color:var(--espresso);}
   @media (prefers-reduced-motion: reduce){.hero-logo{opacity:1; transform:none; animation:none;}}
 
-  /* ---------- STRIP (marquee) ---------- */
-  .strip{border-bottom:1px solid var(--line); background:var(--ink); color:var(--ivory); padding:14px 0; overflow:hidden;}
-  .strip .track{display:flex; gap:14px; white-space:nowrap; font-family:'Space Mono', monospace; font-size:12px; letter-spacing:0.1em; text-transform:uppercase; animation:scrollTrack 30s linear infinite; width:max-content;}
-  @keyframes scrollTrack{from{transform:translateX(0);} to{transform:translateX(-50%);}}
-  .strip .track span{opacity:0.85;}
-
   /* ---------- SECTION SHARED ---------- */
   section{padding:88px 0; position:relative;}
   section.tight{padding:60px 0;}
@@ -284,7 +278,6 @@
   }
   [dir="rtl"] .quote{font-style:normal;}
   [dir="rtl"] .eyebrow{letter-spacing:0;}
-  [dir="rtl"] .strip .track{letter-spacing:0;}
 
   /* ---------- RESPONSIVE ---------- */
   @media (max-width: 980px){

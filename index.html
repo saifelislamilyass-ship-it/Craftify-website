@@ -85,8 +85,20 @@
   </div>
 </section>
 
-<!-- ============ STRIP ============ -->
-<div class="strip"><div class="track" id="strip"></div></div>
+<!-- ============ CREDIBILITY STRIP ============ -->
+<section class="credibility tight">
+  <div class="wrap">
+    <span class="eyebrow" data-i18n="cred.eyebrow">Trusted by</span>
+    <div class="cred-row" style="margin-top:16px;">
+      <div class="cred-item" data-i18n="cred.item1">Ministry of Culture — heritage education collaboration</div>
+      <div class="cred-item" data-i18n="cred.item2">UM6P — student &amp; institutional workshops</div>
+      <div class="cred-item" data-i18n="cred.item3">Corporate partners across Rabat &amp; Casablanca</div>
+    </div>
+  </div>
+  <div class="partner-strip">
+    <div class="partner-track" id="partnerTrack"></div>
+  </div>
+</section>
 
 <!-- ============ PHILOSOPHY FLOW ============ -->
 <section class="flow tight">
@@ -249,21 +261,6 @@
   </div>
 </section>
 
-<!-- ============ CREDIBILITY STRIP ============ -->
-<section class="credibility tight">
-  <div class="wrap">
-    <span class="eyebrow" data-i18n="cred.eyebrow">Trusted by</span>
-    <div class="cred-row" style="margin-top:16px;">
-      <div class="cred-item" data-i18n="cred.item1">Ministry of Culture — heritage education collaboration</div>
-      <div class="cred-item" data-i18n="cred.item2">UM6P — student &amp; institutional workshops</div>
-      <div class="cred-item" data-i18n="cred.item3">Corporate partners across Rabat &amp; Casablanca</div>
-    </div>
-  </div>
-  <div class="partner-strip">
-    <div class="partner-track" id="partnerTrack"></div>
-  </div>
-</section>
-
 <!-- ============ TESTIMONIALS ============ -->
 <section>
   <div class="wrap">
@@ -319,12 +316,6 @@
     en: 'Craftify — Create. Connect. Craft Memories.',
     fr: 'Craftify — Créez. Connectez. Façonnez des souvenirs.',
     ar: 'Craftify — اصنع. تواصل. اصنع الذكريات.'
-  };
-
-  const stripItems = {
-    en: ['B2C WORKSHOPS','KIDS PROGRAMS','SCHOOL PARTNERSHIPS','CORPORATE EXPERIENCES','MINISTRY OF CULTURE COLLABORATION','UM6P PROJECTS'],
-    fr: ['ATELIERS GRAND PUBLIC','PROGRAMMES ENFANTS','PARTENARIATS SCOLAIRES','EXPÉRIENCES ENTREPRISES','COLLABORATION AVEC LE MINISTÈRE DE LA CULTURE','PROJETS UM6P'],
-    ar: ['ورشات للجمهور','برامج الأطفال','شراكات مدرسية','تجارب الشركات','تعاون مع وزارة الثقافة','مشاريع UM6P']
   };
 
   const translations = {
@@ -492,8 +483,6 @@
     }
   };
 
-  const stripEl = document.getElementById('strip');
-
   const partnerLogos = [
     ['images/logos/royaume_maroc.png', "Royaume du Maroc — Ministère de la Culture"],
     ['images/logos/um6p.png', "UM6P — University Mohammed VI Polytechnic"],
@@ -534,9 +523,6 @@
       const key = el.getAttribute('data-i18n-html');
       if(translations[lang][key] !== undefined) el.innerHTML = translations[lang][key];
     });
-
-    const doubled = [...stripItems[lang], ...stripItems[lang], ...stripItems[lang]];
-    stripEl.innerHTML = doubled.map(t => `<span>${t}</span>`).join('<span>&nbsp;&nbsp;·&nbsp;&nbsp;</span>');
 
     document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
     localStorage.setItem('craftify_lang', lang);
