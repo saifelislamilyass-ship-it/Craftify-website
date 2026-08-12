@@ -88,12 +88,7 @@
 <!-- ============ CREDIBILITY STRIP ============ -->
 <section class="credibility tight">
   <div class="wrap">
-    <span class="eyebrow" data-i18n="cred.eyebrow">Trusted by</span>
-    <div class="cred-row" style="margin-top:16px;">
-      <div class="cred-item" data-i18n="cred.item1">Ministry of Culture — heritage education collaboration</div>
-      <div class="cred-item" data-i18n="cred.item2">UM6P — student &amp; institutional workshops</div>
-      <div class="cred-item" data-i18n="cred.item3">Corporate partners across Rabat &amp; Casablanca</div>
-    </div>
+    <span class="eyebrow on-dark" data-i18n="cred.eyebrow">Trusted by</span>
   </div>
   <div class="partner-strip">
     <div class="partner-track" id="partnerTrack"></div>
@@ -362,7 +357,7 @@
       'why.card4.title':'Corporate & Private Events','why.card4.desc':'Custom experiences for teams, celebrations, and milestones.',
       'why.card5.title':'Kids Programs','why.card5.desc':'Safe, joyful, progressive — designed for young creators.',
       'why.card6.title':'Creative Community','why.card6.desc':'A welcoming space where makers of all kinds belong.',
-      'cred.eyebrow':'Trusted by','cred.item1':'Ministry of Culture — heritage education collaboration','cred.item2':'UM6P — student & institutional workshops','cred.item3':'Corporate partners across Rabat & Casablanca',
+      'cred.eyebrow':'Trusted by',
       'testimonials.eyebrow':'In their words','testimonials.title':'What guests say on Google','testimonials.summary':'<b>5.0</b> from <b>105 reviews</b> on Google','testimonials.link':'See all reviews on Google →','testimonials.localGuide':'Local Guide',
       'testimonials.quote1':'"An exceptional and warmly welcoming experience. Ilyas greeted us with generosity and shared his expertise with passion."',
       'testimonials.quote2':'"Fantastic experience at the workshop! We got to become Zelligier Masters for an afternoon. Abir is incredibly kind and professional!"',
@@ -416,7 +411,7 @@
       'why.card4.title':'Événements entreprises & privés','why.card4.desc':'Des expériences sur mesure pour les équipes, célébrations et grandes occasions.',
       'why.card5.title':'Programmes enfants','why.card5.desc':'Sûrs, joyeux, progressifs — conçus pour les jeunes créateurs.',
       'why.card6.title':'Communauté créative','why.card6.desc':'Un espace accueillant où tous les créateurs ont leur place.',
-      'cred.eyebrow':'Ils nous font confiance','cred.item1':'Ministère de la Culture — collaboration en éducation patrimoniale','cred.item2':'UM6P — ateliers étudiants & institutionnels','cred.item3':'Partenaires entreprises à Rabat & Casablanca',
+      'cred.eyebrow':'Ils nous font confiance',
       'testimonials.eyebrow':'Dans leurs mots','testimonials.title':'Ce que disent nos visiteurs sur Google','testimonials.summary':'<b>5.0</b> sur <b>105 avis</b> Google','testimonials.link':'Voir tous les avis sur Google →','testimonials.localGuide':'Guide Local',
       'testimonials.quote1':"« Une expérience exceptionnelle et chaleureusement accueillante. Ilyas nous a reçus avec générosité et a partagé son expertise avec passion. »",
       'testimonials.quote2':'« Expérience fantastique à l’atelier ! Nous sommes devenus « maîtres zelligiers » le temps d’un après-midi. Abir est incroyablement gentille et professionnelle ! »',
@@ -470,7 +465,7 @@
       'why.card4.title':'فعاليات خاصة وللشركات','why.card4.desc':'تجارب مخصصة للفرق والاحتفالات والمناسبات المهمة.',
       'why.card5.title':'برامج الأطفال','why.card5.desc':'آمنة وممتعة وتدريجية — مصممة خصيصًا للمبدعين الصغار.',
       'why.card6.title':'مجتمع إبداعي','why.card6.desc':'مساحة ترحيبية يجد فيها كل صانع مكانه.',
-      'cred.eyebrow':'يثقون بنا','cred.item1':'وزارة الثقافة — تعاون في مجال التربية على التراث','cred.item2':'الجامعة الدولية UM6P — ورشات للطلبة والمؤسسات','cred.item3':'شركاء من الشركات في الرباط والدار البيضاء',
+      'cred.eyebrow':'يثقون بنا',
       'testimonials.eyebrow':'بكلماتهم','testimonials.title':'ماذا يقول ضيوفنا على غوغل','testimonials.summary':'<b>5.0</b> من <b>105 تقييم</b> على غوغل','testimonials.link':'عرض جميع التقييمات على غوغل ←','testimonials.localGuide':'مرشد محلي',
       'testimonials.quote1':'«تجربة استثنائية وحفاوة استقبال حقيقية. استقبلنا إلياس بكرم وشاركنا خبرته بشغف.»',
       'testimonials.quote2':'«تجربة رائعة في الورشة! أصبحنا لبعض الوقت "أساتذة الزليج". عبير لطيفة ومحترفة بشكل لا يصدق!»',
@@ -505,7 +500,7 @@
   ];
   const partnerTrackEl = document.getElementById('partnerTrack');
   if (partnerTrackEl) {
-    const logosHtml = partnerLogos.map(([src, alt]) => `<img src="${src}" alt="${alt}">`).join('');
+    const logosHtml = partnerLogos.map(([src, alt]) => `<div class="partner-chip"><img src="${src}" alt="${alt}"></div>`).join('');
     partnerTrackEl.innerHTML = logosHtml + logosHtml;
   }
 
