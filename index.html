@@ -88,7 +88,7 @@
 <!-- ============ CREDIBILITY STRIP ============ -->
 <section class="credibility tight">
   <div class="wrap">
-    <span class="eyebrow on-dark" data-i18n="cred.eyebrow">Trusted by</span>
+    <span class="eyebrow" data-i18n="cred.eyebrow">Trusted by</span>
   </div>
   <div class="partner-strip">
     <div class="partner-track" id="partnerTrack"></div>
@@ -500,7 +500,7 @@
   ];
   const partnerTrackEl = document.getElementById('partnerTrack');
   if (partnerTrackEl) {
-    const logosHtml = partnerLogos.map(([src, alt]) => `<div class="partner-chip"><img src="${src}" alt="${alt}"></div>`).join('');
+    const logosHtml = partnerLogos.map(([src, alt]) => `<img src="${src}" alt="${alt}">`).join('');
     partnerTrackEl.innerHTML = logosHtml + logosHtml;
   }
 
