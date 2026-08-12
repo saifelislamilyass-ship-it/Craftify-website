@@ -186,10 +186,16 @@
   .cred-item{font-family:'Playfair Display', serif; font-size:16px; font-style:italic; color:var(--ink-soft); flex:1; min-width:220px;}
 
   /* ---------- TESTIMONIALS ---------- */
+  .review-summary{display:flex; align-items:center; flex-wrap:wrap; gap:14px; margin-bottom:22px;}
+  .review-summary .stars{color:#E0A324; font-size:16px; letter-spacing:2px;}
+  .review-summary .score{font-family:'Space Mono', monospace; font-size:14px; color:var(--ink-soft);}
+  .review-summary .score b{color:var(--ink);}
+  .review-summary .review-link{font-family:'Space Mono', monospace; font-size:12.5px; font-weight:700; letter-spacing:0.04em; color:var(--terracotta); text-decoration:none; border-bottom:1px solid var(--terracotta); padding-bottom:1px;}
+  .review-summary .review-link:hover{color:var(--terracotta-deep); border-color:var(--terracotta-deep);}
   .testimonial-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:1px; background:var(--line); border:1px solid var(--line);}
-  .testimonial{background:var(--ivory); padding:34px 30px;}
-  .testimonial p.quote{font-family:'Playfair Display', serif; font-size:19px; font-style:italic; line-height:1.4; color:var(--ink-soft);}
-  .testimonial .who{margin-top:16px; font-family:'Space Mono', monospace; font-size:12px; letter-spacing:0.06em; color:var(--terracotta);}
+  .testimonial{background:var(--ivory); padding:20px 22px;}
+  .testimonial p.quote{font-family:'Playfair Display', serif; font-size:15.5px; font-style:italic; line-height:1.4; color:var(--ink-soft);}
+  .testimonial .who{margin-top:10px; font-family:'Space Mono', monospace; font-size:11px; letter-spacing:0.05em; color:var(--terracotta);}
 
   /* ---------- CONTACT ---------- */
   .contact{background:var(--blush); border-top:1px solid var(--line);}
@@ -482,11 +488,16 @@
 <section>
   <div class="wrap">
     <div class="section-head"><span class="eyebrow">In their words</span><h2>What guests say on Google</h2></div>
+    <div class="review-summary">
+      <span class="stars">★★★★★</span>
+      <span class="score"><b>5.0</b> from <b>105 reviews</b> on Google</span>
+      <a class="review-link" href="https://maps.app.goo.gl/8vjbqMexFDZxVpQm8" target="_blank" rel="noopener">See all reviews on Google →</a>
+    </div>
     <div class="testimonial-grid">
-      <div class="testimonial"><p class="quote">"An exceptional and warmly welcoming experience. Ilyas greeted us with generosity and shared his expertise with passion. The zellij workshop was a true delight. We loved every moment and will gladly return, with family or friends. A wonderful local business to discover and support."</p><div class="who">— Wiam Mahroug, Local Guide · Google</div></div>
-      <div class="testimonial"><p class="quote">"Fantastic experience at the workshop! We got to become Zelligier Masters for an afternoon. Abir is incredibly kind and professional! You can tell she's passionate about what she does! I highly recommend it for children and adults alike!"</p><div class="who">— Lina Sekkat, Local Guide · Google</div></div>
-      <div class="testimonial"><p class="quote">"This place is magical, and Ilyas and Oumaima are truly wonderful people: kind, smiling, and generous. More than just a workshop, it's a real connection with the material. I left feeling peaceful, proud of my creations, and ready to continue exploring this world."</p><div class="who">— Steve Renggli, Local Guide · Google</div></div>
-      <div class="testimonial"><p class="quote">"Very satisfied with my two experiences with Craftify. Two different workshops — a pottery workshop for my children and a zellige tile workshop that I had the pleasure of sharing with them — a pure moment of sharing and enjoyment. I will return as promised for the weaving and pottery wheel workshop."</p><div class="who">— Kaoutar Lguaouzi, Local Guide · Google</div></div>
+      <div class="testimonial"><p class="quote">"An exceptional and warmly welcoming experience. Ilyas greeted us with generosity and shared his expertise with passion."</p><div class="who">— Wiam Mahroug, Local Guide · Google</div></div>
+      <div class="testimonial"><p class="quote">"Fantastic experience at the workshop! We got to become Zelligier Masters for an afternoon. Abir is incredibly kind and professional!"</p><div class="who">— Lina Sekkat, Local Guide · Google</div></div>
+      <div class="testimonial"><p class="quote">"This place is magical, and Ilyas and Oumaima are truly wonderful people: kind, smiling, and generous."</p><div class="who">— Steve Renggli, Local Guide · Google</div></div>
+      <div class="testimonial"><p class="quote">"Very satisfied with my two experiences with Craftify. Two different workshops — a pure moment of sharing and enjoyment."</p><div class="who">— Kaoutar Lguaouzi, Local Guide · Google</div></div>
     </div>
   </div>
 </section>
