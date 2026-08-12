@@ -207,6 +207,11 @@
   .credibility{border-bottom:1px solid var(--line);}
   .cred-row{display:flex; justify-content:space-between; flex-wrap:wrap; gap:20px;}
   .cred-item{font-family:'Playfair Display', serif; font-size:16px; font-style:italic; color:var(--ink-soft); flex:1; min-width:220px;}
+  .partner-strip{margin-top:34px; overflow:hidden; -webkit-mask-image:linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask-image:linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);}
+  .partner-track{display:flex; align-items:center; gap:56px; width:max-content; animation:partnerScroll 48s linear infinite;}
+  .partner-track img{height:38px; width:auto; opacity:0.82; filter:grayscale(0.15); transition:opacity 0.2s, filter 0.2s;}
+  .partner-track img:hover{opacity:1; filter:grayscale(0);}
+  @keyframes partnerScroll{from{transform:translateX(0);} to{transform:translateX(-50%);}}
 
   /* ---------- TESTIMONIALS ---------- */
   .review-summary{display:flex; align-items:center; flex-wrap:wrap; gap:14px; margin-bottom:22px;}

@@ -259,6 +259,9 @@
       <div class="cred-item" data-i18n="cred.item3">Corporate partners across Rabat &amp; Casablanca</div>
     </div>
   </div>
+  <div class="partner-strip">
+    <div class="partner-track" id="partnerTrack"></div>
+  </div>
 </section>
 
 <!-- ============ TESTIMONIALS ============ -->
@@ -490,6 +493,32 @@
   };
 
   const stripEl = document.getElementById('strip');
+
+  const partnerLogos = [
+    ['images/logos/royaume_maroc.png', "Royaume du Maroc — Ministère de la Culture"],
+    ['images/logos/um6p.png', "UM6P — University Mohammed VI Polytechnic"],
+    ['images/logos/planete_montessori.png', "Planète Montessori"],
+    ['images/logos/festival_livre_paris.png', "Festival du Livre de Paris"],
+    ['images/logos/eu_flag.png', "European Union"],
+    ['images/logos/sharjah_book_fair.png', "Sharjah International Book Fair"],
+    ['images/logos/alx.png', "ALX"],
+    ['images/logos/feria_panama.png', "Feria Internacional del Libro de Panamá"],
+    ['images/logos/child_youth_book_fair.png', "International Children's and Youth Book Fair"],
+    ['images/logos/dar_america.png', "Dar America Casablanca"],
+    ['images/logos/uir.png', "UIR — The Innovative University"],
+    ['images/logos/al_akhawayn.png', "Al Akhawayn University"],
+    ['images/logos/aukiba.png', "AuKiba"],
+    ['images/logos/salon_livre.png', "Salon du Livre"],
+    ['images/logos/high_atlas.png', "High Atlas Foundation"],
+    ['images/logos/isadac.png', "ISADAC"],
+    ['images/logos/gsjc.png', "Groupe Scolaire Jacques Chirac"],
+    ['images/logos/orange_business.png', "Orange Business"],
+  ];
+  const partnerTrackEl = document.getElementById('partnerTrack');
+  if (partnerTrackEl) {
+    const logosHtml = partnerLogos.map(([src, alt]) => `<img src="${src}" alt="${alt}">`).join('');
+    partnerTrackEl.innerHTML = logosHtml + logosHtml;
+  }
 
   function applyLanguage(lang){
     if(!translations[lang]) lang = 'en';
