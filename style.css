@@ -51,13 +51,29 @@
   .menu-toggle svg{width:24px; height:24px; color:var(--ink);}
 
   /* ---------- HERO ---------- */
-  .hero{
-    position:relative; overflow:hidden; padding:120px 0 90px; border-bottom:1px solid var(--line);
-    background:
-      linear-gradient(165deg, rgba(46,32,24,0.78), rgba(140,83,57,0.55)),
-      url('images/hero-cover.jpg') center 32%/cover no-repeat;
+  .hero{position:relative; overflow:hidden; padding:120px 0 90px; border-bottom:1px solid var(--line); background:#3a2418;}
+  .hero-bg{
+    position:absolute; inset:-24px; z-index:0;
+    background:url('images/hero-cover.jpg') center 32%/cover no-repeat;
+    animation:heroZoom 24s ease-in-out infinite alternate;
   }
-  .hero .zellij-bg{display:none;}
+  .hero-overlay{
+    position:absolute; inset:0; z-index:0;
+    background:linear-gradient(165deg, rgba(46,32,24,0.78), rgba(140,83,57,0.5));
+    animation:heroGlow 12s ease-in-out infinite alternate;
+  }
+  @keyframes heroZoom{from{transform:scale(1);} to{transform:scale(1.12);}}
+  @keyframes heroGlow{from{opacity:1;} to{opacity:0.85;}}
+  .hero .hero-pattern{opacity:0.16; z-index:0; animation:heroPatternDrift 70s linear infinite;}
+  @keyframes heroPatternDrift{from{transform:translate(0,0) rotate(0deg);} to{transform:translate(-88px,-88px) rotate(6deg);}}
+  .hero-particles{position:absolute; inset:0; z-index:0; overflow:hidden; pointer-events:none;}
+  .hero-particles span{position:absolute; bottom:-20px; border-radius:50%; background:rgba(255,255,255,0.45); animation-name:heroParticleUp; animation-timing-function:ease-in; animation-iteration-count:infinite;}
+  @keyframes heroParticleUp{
+    0%{transform:translateY(0) translateX(0); opacity:0;}
+    12%{opacity:0.7;}
+    88%{opacity:0.3;}
+    100%{transform:translateY(-620px) translateX(24px); opacity:0;}
+  }
   .hero .wrap{position:relative; z-index:1; text-align:center; max-width:760px;}
   .hero-logo{width:220px; margin:0 auto; opacity:0; transform:scale(0.85); animation:heroIn 0.8s cubic-bezier(.2,.8,.2,1) forwards; filter:brightness(0) invert(1);}
   @keyframes heroIn{to{opacity:1; transform:scale(1);}}
