@@ -129,6 +129,8 @@
   .exp-more{margin-top:8px; font-size:12.5px; font-weight:600; color:var(--ink-soft); text-decoration:none; display:inline-flex; align-items:center; gap:6px;}
   .exp-more:hover{color:var(--ink);}
   .exp-links{display:flex; flex-direction:column; align-items:flex-start;}
+  .premium .exp-more, .corp .exp-more, .bundle-card .exp-more{color:rgba(255,255,255,0.75);}
+  .premium .exp-more:hover, .corp .exp-more:hover, .bundle-card .exp-more:hover{color:#fff;}
   .price{font-family:'Playfair Display', serif; font-weight:800; font-size:30px; color:var(--ink);}
   .price .dh{font-weight:600; color:var(--terracotta); font-size:19px; margin-inline-start:4px;}
 
@@ -271,6 +273,7 @@
   .detail-price-row{display:flex; gap:20px; flex-wrap:wrap; margin-top:10px;}
   .detail-price-card{border:1px solid var(--line); border-radius:var(--radius); padding:24px 26px; background:#fff; flex:1; min-width:200px;}
   .detail-price-card h3{font-size:13px; text-transform:uppercase; letter-spacing:0.06em; color:var(--ink-soft); font-family:'Space Mono', monospace; font-weight:700;}
+  .detail-price-card .per{font-size:12.5px; color:var(--ink-soft); font-style:italic; margin-top:6px;}
   .detail-cta{text-align:center; padding:60px 0; background:var(--espresso);}
   .detail-cta h2{color:#fff; font-size:clamp(26px,3.4vw,36px);}
   .detail-cta p{color:rgba(255,229,217,0.8); margin-top:10px;}
