@@ -121,6 +121,7 @@
   .exp-card:hover{transform:translateY(-3px); box-shadow:0 10px 24px rgba(46,42,34,0.08);}
   .exp-visual{aspect-ratio:4/3; background:var(--blush); display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden;}
   .exp-visual svg{width:44px; height:44px; color:var(--terracotta); position:relative; z-index:1;}
+  .exp-visual img{width:100%; height:100%; object-fit:cover;}
   .exp-body{padding:20px;}
   .exp-body h3{font-size:19px;}
   .exp-body p{font-size:13.5px; color:var(--ink-soft); margin:8px 0 16px;}
