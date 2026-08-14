@@ -255,6 +255,9 @@
   .detail-hero{background:var(--blush); border-bottom:1px solid var(--line); padding:40px 0 40px;}
   .detail-hero h1{font-size:clamp(32px,5vw,52px); margin-top:16px;}
   .detail-hero p.detail-lede{font-size:17px; color:var(--ink-soft); margin-top:14px; max-width:60ch;}
+  .detail-hero.has-photo{padding:64px 0 56px; border-bottom:none;}
+  .detail-hero.has-photo h1{color:#fff;}
+  .detail-hero.has-photo p.detail-lede{color:rgba(255,255,255,0.9);}
   .detail-section{padding:56px 0; border-bottom:1px solid var(--line);}
   .detail-section:last-of-type{border-bottom:none;}
   .detail-section h2{font-size:clamp(24px,3vw,32px); margin-bottom:24px;}
